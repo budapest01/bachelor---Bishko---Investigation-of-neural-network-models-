@@ -1,0 +1,11 @@
+
+version: '3.8'
+
+services:
+  solar-forecast:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    container_name: solar_forecast_container
